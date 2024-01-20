@@ -4,7 +4,7 @@ import Header from "./components/Navbar";
 import Destination from "./pages/Destination";
 import Crew from "./pages/Crew";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Technology from "./pages/technology";
+import Technology from "./pages/Technology";
 
 const App = () => {
   return (
