@@ -6,9 +6,9 @@ import crew1 from "./assets/crew/image-douglas-hurley.png";
 import crew2 from "./assets/crew/image-mark-shuttleworth.png";
 import crew3 from "./assets/crew/image-victor-glover.png";
 import crew4 from "./assets/crew/image-anousheh-ansari.png";
-import launchImg from "./assets/technology/image-launch-vehicle-landscape.jpg";
-import spaceCapsuleImg from "./assets/technology/image-space-capsule-landscape.jpg";
-import spacePortImg from "./assets/technology/image-spaceport-landscape.jpg"
+import launchImg from "./assets/technology/image-launch-vehicle-portrait.jpg";
+import spaceCapsuleImg from "./assets/technology/image-space-capsule-portrait.jpg";
+import spacePortImg from "./assets/technology/image-spaceport-portrait.jpg";
 
 export const destinations = [
   {

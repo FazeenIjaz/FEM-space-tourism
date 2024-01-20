@@ -20,7 +20,7 @@ const Technology = () => {
           {technology.map((tech, index) => (
             <span
               key={index}
-              className={`w-[40px] md:w-[60px] h-[40px] md:h-[60px] cursor-pointer flex justify-center items-center rounded-full lg:mx-0 mx-auto ${
+              className={`w-[40px] md:w-[60px] h-[40px] md:h-[60px] cursor-pointer flex justify-center items-center rounded-full lg:mx-0 m-auto ${
                 activeSpan === tech ? "bg-white text-black" : "bg-white/40"
               }`}
               onClick={() => handleSpanClick(tech)}
@@ -51,7 +51,7 @@ const Technology = () => {
                   <img
                     src={tech.images.portrait}
                     alt={tech.name}
-                    className="h-full w-full rounded-sm"
+                    className="h-full w-full rounded-sm object-cover"
                   />
                 </div>
               </div>
