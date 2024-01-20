@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-bellefair {
+    font-family: "Bellefair", serif;
+  }
+  .font-barlow {
+    font-family: "Barlow", sans-serif;
+  }
+  .font-barlow-condensed {
+    font-family: "Barlow Condensed", sans-serif;
+  }
+}
+
+.ripple {
+  animation: ripple 3s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 90px rgba(255, 255, 255, 0);
+  }
+}
