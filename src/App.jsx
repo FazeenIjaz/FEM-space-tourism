@@ -11,7 +11,6 @@ const App = () => {
     <div className="">
       <Router>
         <Header />
-        {/* <div className="bg-red-900"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destination" element={<Destination />} />
@@ -19,7 +18,6 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="*" element={<Home />} />
         </Routes>
-        {/* </div> */}
       </Router>
     </div>
   );

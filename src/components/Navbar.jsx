@@ -1,16 +1,21 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { links } from "../data";
 import logo from "../assets/shared/logo.svg";
 import { IoMenu } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
 
 const Header = () => {
+  const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false);
   const [link, setLink] = useState(links[0]);
 
+  useEffect(() => {
+    setLink(location.pathname);
+  }, [location.pathname]);
+
   const active = (selectedLink) =>
-    link.title === selectedLink
+    link === selectedLink
       ? "border-b-2 border-white"
       : "border-b-2 border-transparent ";
 
@@ -31,9 +36,9 @@ const Header = () => {
               <li
                 key={link.id}
                 className={`flex ${active(
-                  link.title
+                  link.link
                 )} hover:border-b-2 hover:border-white hover:border-solid `}
-                onClick={() => setLink(link)}
+                onClick={() => setLink(link.link)}
               >
                 <Link to={link.link}>{link.title}</Link>
               </li>
